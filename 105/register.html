@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <nav id="menu-container">
+            <a href = "index.html" class="menu">Home</a>
+            <a href="register.html" class="menu">Register</a>
+            <a href="#" class="menu">Users</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Super Registration System</h1>
+        <div class="">
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+
+                <label for="lname">Last Name:</label><br>
+                <input type="text" id="lname" name="lname"><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password"><br>
+
+                <label for="address">Address:</label><br>
+                <input type="text" id="address" name="Address"><br>
+
+                <label for="phone">Phone Number:</label><br>
+                <input type="number" id="phone" name="phone"><br>
+
+                <label for="age">Age:</label><br>
+                <input type="number" id="age" name="Age"><br>
+
+                <label for="color">Color:</label><br>
+                <input type="color" id="color" name="Color"><br>
+
+                <label for="payment">Payment:</label><br>
+                <select id="selPayment">
+                    <option>Paypal</option>
+                    <option>Check</option>
+                    <option>Cash</option>
+                    <option>Video Games</option>
+                </select>
+            <button onclick="registerUser();">Register</button>
+        </div>
+    </main>
+    <table id="usersTable">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Age</th>
+            <th>Phone</th>
+            <th>Address</th>
+        </tr>
+    </table>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts/storeManager.js"></script>
+    <script src="scripts/register.js"></script>
+</body>
+</html>
